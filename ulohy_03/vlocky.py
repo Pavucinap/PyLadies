@@ -3,8 +3,6 @@ from random import randrange
 
 shape("circle")
 
-
-
 for _ in range(randrange(5,15)):
     penup()
     left(randrange(0, 360))
