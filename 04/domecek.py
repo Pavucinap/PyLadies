@@ -7,10 +7,10 @@ color = "red"
 fillcolor(color)
 begin_fill()
 
-# Nakreslí čtverec
-for _ in range(4):
+# Nakreslí šestiúhelník
+for _ in range(6):
     forward(size)
-    left(90)
+    left(60)
 
 end_fill()
 
