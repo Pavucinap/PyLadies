@@ -1,4 +1,4 @@
-zvirata = ["pes", "kočka", "králík","had"]
+zvirata = ["pes", "kočka", "králík", "had"]
 zvirata.append("andulka")
 
 # Slovník ze seznamu, klíč je druhý znak ve slově a hodnota je slovo
@@ -16,7 +16,7 @@ for key in sort_letters:
     sort_value[key] = zvirata_dict[key]
 
 # Vypsání pouze hodnot slovníku jako seznam
-seznam_zvirat = list(zvirata_dict.values())
+seznam_zvirat = list(sort_value.values())
 print(seznam_zvirat)
 
 # Než jsem si přečetla pořádně zadání, že to má být přes slovníky, tak jsem 
