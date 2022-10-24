@@ -8,12 +8,13 @@ while True:
             and len(r_c) == 11 and r_c[6] == "/"):
         print("Toto není správný formát. Zkus to znovu.")
         continue
+    
     cislo = pred + za       # složení rodného čísla bez lomítka
 
     # Zjištění, zda je rodné číslo správně
     # Ověření dělitelnosti 11
     if int(cislo) % 11 != 0:
-       print("Toto asi nebude správně.")
+       print("Toto asi nebude správně. Rodné číslo má být dělitelné 11.")
        continue
 
     # Pro zjednodušení převod str na int a rozdělení na dvojčíslí
