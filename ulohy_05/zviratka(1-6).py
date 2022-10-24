@@ -1,26 +1,26 @@
 zvirata = ["pes", "kočka", "králík","had"]
-print(f'Všechna: {zvirata}')
+print(f"Zde jsou všechna vířata v seznamu: {zvirata}\n")
 
 # úloha 1 - vypiš všechna zvířata, která jsou kratší než 5 písmen
 kratke = []
 for zvire in zvirata:
     if len(zvire) <5:
         kratke.append(zvire)
-print(f"Kratší než 5 písmen: {kratke}")
+print(f"1. Všechna zvířata, která mají méně než 5 písmen: {kratke}\n")
 
 # úloha 2 - vypiš všechna zvířata, která začínají na k
 zacina = []
 for zvire in zvirata:
     if zvire[0] == "k":
         zacina.append(zvire)
-print(f"Na písmeno k začíná: {zacina}")
+print(f"2. Seznam zvířat začínajících na písmeno k: {zacina}\n")
 
 # úloha 3 - zadej slovo a zjisti, zda je ve zvířatech
 zadane = input("Jaké zvíře hledáš? ")
 if zadane in zvirata:
-    print("Ano, je tam.")
+    print("3. Ano, hledané zvíře je v seznamu.\n")
 else:
-    print("Ne, není tam.")
+    print("3. Ne, hledané zvíře v seznamu nené.\n")
 
 # úloha 4 - oba seznamy, jen v prvním seznamu, jen v druhém seznamu
 list1 = ["králík", "pes", "kráva", "prase", "slepice"]
@@ -37,13 +37,13 @@ for zvire in list2:
     if zvire not in list1:
         druhy.append(zvire)
 
-print(f"Všechna zvířata jsou:{vsechna}")
+print(f"4. Všechna zvířata jsou:{vsechna}")
 print(f"Pouze v prvním seznamu jsou: {prvni}")
-print(f"Pouze v druhém seznamu jsou: {druhy}")
+print(f"Pouze v druhém seznamu jsou: {druhy}\n")
 
 # úloha 5 - seřazení podle abecedy
 zvirata.sort()
-print(f"Zvířata seřazena dle abecedy: {zvirata}")
+print(f"5. Zvířata seřazena dle abecedy: {zvirata}\n")
 
 # úloha 6 - seřazení podle 2. písmene
 zvirata.append("andulka")
@@ -57,14 +57,17 @@ for zvire in zvirata:
 keys = zvirata_dict.keys()
 sort_letters = sorted(keys)
 
-# Vytvoření nového slovníku dle seřazených klíčů
-sort_value = {}
+# Vytvoření nového seznamu dle seřazených klíčů
+sort_value = []
 for key in sort_letters:
-    sort_value[key] = zvirata_dict[key]
+    sort_value.append(zvirata_dict[key])
 
-# Vypsání pouze hodnot slovníku jako seznam
-seznam_zvirat = list(zvirata_dict.values())
-print(seznam_zvirat)
+print(f"6. Zvířata seřazená podle druhého písmena: {sort_value}")
+
+# Vytvoření nového slovníku dle seřazených klíčů
+# sort_value = {}
+# for key in sort_letters:
+ #    sort_value[key] = zvirata_dict[key]
 
 # Než jsem si přečetla pořádně zadání, že to má být přes slovníky, tak jsem 
 # vytvořila toto a také fungovalo, ale pak jsem předělala podle zadání:
