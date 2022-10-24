@@ -10,14 +10,21 @@ for zvire in zvirata:
 keys = zvirata_dict.keys()
 sort_letters = sorted(keys)
 
-# Vytvoření nového slovníku dle seřazených klíčů
-sort_value = {}
+# Vytvoření nového seznamu dle seřazených klíčů
+sort_value = []
 for key in sort_letters:
-    sort_value[key] = zvirata_dict[key]
+    sort_value.append(zvirata_dict[key])
+
+print(sort_value)
+
+# Vytvoření nového slovníku dle seřazených klíčů
+# sort_value = {}
+# for key in sort_letters:
+ #    sort_value[key] = zvirata_dict[key]
 
 # Vypsání pouze hodnot slovníku jako seznam
-seznam_zvirat = list(sort_value.values())
-print(seznam_zvirat)
+# seznam_zvirat = list(sort_value.values())
+# print(seznam_zvirat)
 
 # Než jsem si přečetla pořádně zadání, že to má být přes slovníky, tak jsem 
 # vytvořila toto a také fungovalo, ale pak jsem předělala podle zadání:
