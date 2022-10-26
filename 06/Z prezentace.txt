@@ -1,0 +1,5 @@
+Procedura - funkce, který nic nedělá
+
+print("" end="jak chceme ukončit") - default \n, můžeme změnit, když zvolíme něco jiného
+
+definice konstat: velkými písmeny, např. CONST_VAL = 99 (globální proměnná pro celý kód)
