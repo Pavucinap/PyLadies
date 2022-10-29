@@ -76,8 +76,8 @@ while True:
     if not format(r_c):
         continue
         
-    #if not delitelnost(r_c):
-     #   continue
+    if not delitelnost(r_c):
+        continue
     
     if not datum(r_c):
         continue
