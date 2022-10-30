@@ -12,7 +12,7 @@ def tah_hrac(pole, symbol):
         zvolena_pozice = int(zvolena_pozice)
                     
         # Ošetření správnosti rozsahu pozice
-        if not 0 <= zvolena_pozice <= len(pole):
+        if not 0 <= zvolena_pozice < len(pole):
             print("Pozice je mimo rozsah herního pole. Zvol prosím pozici 0 - 19.")
             continue
         # Ošetření, že se nezapíše znak na pozici, kde již nějaký je

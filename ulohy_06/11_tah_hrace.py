@@ -15,7 +15,7 @@ while True:
     zvolena_pozice = int(zvolena_pozice)
                 
     # Ošetření správnosti rozsahu pozice
-    if not 0 <= zvolena_pozice <= len(hraci_pole):
+    if not 0 <= zvolena_pozice < len(hraci_pole):
         print("Pozice je mimo rozsah herního pole. Zvol prosím pozici 0 - 19.")
         continue
     # Ošetření, že se nezapíše znak na pozici, kde již nějaký je
