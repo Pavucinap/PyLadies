@@ -1,26 +1,26 @@
-def format(zadani):
+def format(rodne_cislo):
     """Ověří správnost zápisu RRMMDD/XXXX"""
-    if (zadani[0:6].isdigit() and zadani[7:11].isdigit() 
-            and len(zadani) == 11 and zadani[6] == "/"):
+    if (rodne_cislo[0:6].isdigit() and rodne_cislo[7:11].isdigit() 
+            and len(rodne_cislo) == 11 and rodne_cislo[6] == "/"):
        return True
     else:
         print("Správný zápis je ve formátu RRMMDD/XXXX")
         return False
 
-def delitelnost(zadani):
+def delitelnost(rodne_cislo):
     """Ověří, zda je číslo dělitelné 11"""
-    cislo = zadani[0:6] + zadani[7:11]
+    cislo = rodne_cislo[0:6] + rodne_cislo[7:11]
     if int(cislo) % 11 == 0:
        return True
     else:
         print("Rodné číslo musí být dělitelné 11.")
         return False
 
-def datum(zadani):
+def datum(rodne_cislo):
     """Zjistí, zda jsou čísla správně a vypíše datum narození."""
-    rok = int(zadani[0:2])
-    mes = int(zadani[2:4])
-    den = int(zadani[4:6])
+    rok = int(rodne_cislo[0:2])
+    mes = int(rodne_cislo[2:4])
+    den = int(rodne_cislo[4:6])
 
     if 22 < rok < 85:
         print("Rok se může pohybovat v rozmezí 1985 - 2022.")
@@ -61,25 +61,31 @@ def datum(zadani):
 
     return datum_nar
 
-def pohlavi(zadani):
+def pohlavi(rodne_cislo):
     """Zjistí pohlaví zadavatele"""
-    if 0 < int(zadani[2:4]) <= 12:
+    if 0 < int(rodne_cislo[2:4]) <= 12:
        odpoved = "muž"
     else:
         odpoved = "žena"
     
     return odpoved
 
+def kontrola(rodne_cislo):
+    if not format(r_c):
+        return False
+        
+    if not delitelnost(r_c):
+        return False
+    
+    if not datum(r_c):
+        return False
+
+    return True
+ 
 while True:
     r_c = input("Jaké je tvé rodné číslo? ")
 
-    if not format(r_c):
-        continue
-        
-    if not delitelnost(r_c):
-        continue
-    
-    if not datum(r_c):
+    if not kontrola(r_c):
         continue
     
     print(f"Datum tvého narození je {datum(r_c)} a jsi {pohlavi(r_c)}.")

@@ -32,10 +32,8 @@ def tah_pocitace(pole, symbol):
         # Náhodně vybere pozici od 0 do 19
         pozice = randrange(19)
         # Ošetření, že nemůže zadat na obsazenou pozici
-        if pole[pozice] != "-":
-            continue
-
-        break
+        if pole[pozice] == "-":
+            break
 
     vysledek_pocitac = pole[:pozice] + symbol + pole[pozice + 1:]
    

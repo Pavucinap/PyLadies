@@ -10,18 +10,15 @@
 
 from random import randrange
 
-hraci_pole = 20 * "-"
-
-def tah_pocitace(pole):
+def tah_pocitace(pole = 20 * "-"):
     """Vrátí herní pole se zaznamenaným tahem počítače"""
     while True:
         pozice = randrange(19)
-        if pole[pozice] != "-":
-            continue
-        break
+        if pole[pozice] == "-":
+            break
     symbol = "o"
     vysledek = pole[:pozice] + symbol + pole[pozice + 1:]
    
     return vysledek
 
-print(tah_pocitace(hraci_pole))
+print(tah_pocitace())
