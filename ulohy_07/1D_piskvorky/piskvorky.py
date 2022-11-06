@@ -51,7 +51,7 @@ def piskvorky1d(symbol_hr, symbol_pc):
         if vyhodnoceni != "-":
             break
         # Volání a vypsání tahu počítače
-        hraci_pole = tah_pocitace(hraci_pole, symbol_pc)
+        hraci_pole = ai.tah_pocitace(hraci_pole, symbol_pc)
         print(f"Tah počítače: \t{hraci_pole}\n")
         # Vyhodnocení tahu počítače
         vyhodnoceni = vyhodnot(hraci_pole)
