@@ -8,6 +8,8 @@ def tah_pocitace(pole, symbol):
         # Ošetření, že nemůže zadat na obsazenou pozici
         if pole[pozice] == "-":
             break
+        else:
+            raise RuntimeError("Na této pozici již herní znak je.")
 
     vysledek_pocitac = pole[:pozice] + symbol + pole[pozice + 1:]
    
