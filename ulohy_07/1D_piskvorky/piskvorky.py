@@ -1,4 +1,6 @@
 import ai
+import util
+
 
 def tah_hrac(pole, symbol):
     """Vrátí herní pole se zaznamenaným tahem hráče"""
@@ -10,37 +12,31 @@ def tah_hrac(pole, symbol):
             continue
 
         zvolena_pozice = int(zvolena_pozice)
-                    
-        # Ošetření správnosti rozsahu pozice
-        if not 0 <= zvolena_pozice < len(pole):
-            print("Pozice je mimo rozsah herního pole. Zvol prosím pozici 0 - 19.")
-            continue
-        # Ošetření, že se nezapíše znak na pozici, kde již nějaký je
-        elif pole[zvolena_pozice] != "-":
-            print("Na této pozici již herní znak je. Zvol jinou.")
-            continue
-
         break
 
-    vysledek_hrac = pole[:zvolena_pozice] + symbol + pole[zvolena_pozice + 1:]
-   
-    return vysledek_hrac
+    return util.tah(pole, symbol, zvolena_pozice)
+
 
 def vyhodnot(pole):
     if "xxx" in pole:
-        vyhodnoceni = "x" # Vyhrává x
+        # Vyhrává x
+        vyhodnoceni = "x"
     elif "ooo" in pole:
-        vyhodnoceni = "o" # Vyhrává o
+        # Vyhrává o
+        vyhodnoceni = "o"
     elif "-" not in pole:
-        vyhodnoceni = "!" # Remíza
+        # Remíza
+        vyhodnoceni = "!"
     else:
-        vyhodnoceni = "-" # Hra pokračuje
-    
+        # Hra pokračuje
+        vyhodnoceni = "-"
+
     return vyhodnoceni
+
 
 def piskvorky1d(symbol_hr, symbol_pc):
     hraci_pole = 20 * "-"
-    
+
     while True:
         # Volání a vypsání tahu hráče
         hraci_pole = tah_hrac(hraci_pole, symbol_hr)
@@ -58,8 +54,9 @@ def piskvorky1d(symbol_hr, symbol_pc):
         # Pokud vyjde něco jiného než konec, pokračujeme
         if vyhodnoceni != "-":
             break
-    
+
     return vyhodnoceni
+
 
 def hra():
     while True:
@@ -68,7 +65,7 @@ def hra():
         if symbol_hrac not in ("x", "o"):
             print("Herní symboly jsou pouze 'x' nebo 'o'")
             continue
-        
+
         break
 
     # Přiřazení symbolu počítači podle volby  hráče
