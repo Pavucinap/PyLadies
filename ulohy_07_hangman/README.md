@@ -1,7 +1,7 @@
 # Vítejte ve hře Šibenice
 
 ## Informace o hře:
-    Šibenice nebo také Oběšenec či Kat je hádací hra, jejíž podstatou je snaha postupně po písmenech odhalit skryté slovo.
+Šibenice nebo také Oběšenec či Kat je hádací hra, jejíž podstatou je snaha postupně po písmenech odhalit skryté slovo.
 Hráč navrhuje písmena, která by v hledaném slově mohla být. Vyskytuje-li se písmeno v hledaném slově, je zapsáno na správnou pozici.
 V opačném případě se vykreslí část oběšence.
 Hádající hráč zvítězí, pokud uhádne tajenku dříve, než je jeho neúspěšnými pokusy obrázek dokreslen.
