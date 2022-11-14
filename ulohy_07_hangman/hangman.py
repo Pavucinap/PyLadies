@@ -1,6 +1,6 @@
 from ai import load_words, choose_word, load_field
 from insert_character import char_insert
-import pictures
+from pictures import draw_picture, picture_list
 import validation
 
 
@@ -33,20 +33,22 @@ def result(generated_field, random_word):
 def game():
     """Spuštění hry"""
     fail_counter = 0
+    # Maximální počet chyb je délka řetězce bez prvního obrázku, proto - 1
+    max_failes = (len(picture_list)) - 1
     game_word = choose_word(load_words())
     game_field = load_field(game_word)
     while result(game_field, game_word):
-        pictures.draw_picture(fail_counter)
+        draw_picture(fail_counter)
         print(f"{game_field}\n")
         letter = char_insert()
         if validate_input(game_field, game_word, letter):
             game_field = change(game_field, game_word, letter)
         else:
             fail_counter += 1
-            if fail_counter == 9:
-                pictures.draw_picture(fail_counter)
+            if fail_counter == max_failes:
+                draw_picture(fail_counter)
                 print(f"Prohrál jsi. Hledané slovo bylo: {game_word}")
                 break
             else:
                 print(f"\nBohužel {letter} tam není.")
-                print(f"Zbývající počet pokusů: {9 - fail_counter}")
+                print(f"Zbývající počet pokusů: {max_failes - fail_counter}")

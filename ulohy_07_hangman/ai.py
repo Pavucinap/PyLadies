@@ -1,25 +1,24 @@
 from random import choice
+import os
 
 
 def load_words():
-    """Vytvoří seznam slov ze souboru"""
     filename = "words.txt"
-    try:
-        with open(filename, encoding="utf-8") as f:
-            contents = f.read()
-            words = contents.split("\n")
-            return words
-    except OSError:
-        print(f'Soubor {filename} bohužel nelze nalézt.')
+    if os.path.isfile(filename):
+        words = open(filename, encoding="utf-8").read().splitlines()
+        return words
+    else:
+        print(f"Bohužel soubor {filename} neexistuje. Vytvoř si ho.")
+        exit()
 
 
 def choose_word(words):
     """Vybere náhodného slovo ze seznamu"""
-    word = choice(words)
-    return word
+    return choice(words)
 
 
 def load_field(word):
     """Vytvoří herní pole dle počtu písmen ve slově"""
-    field = "_" + (len(word) - 1) * " _"
+    # Metoda vezme všechny a spojí je podle oddělovač, který MUSÍ být uveden (zde " ")
+    field = " ".join(len(word) * "_")
     return field
