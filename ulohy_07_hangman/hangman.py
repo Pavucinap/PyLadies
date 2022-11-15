@@ -34,7 +34,7 @@ def game():
     """Spuštění hry"""
     fail_counter = 0
     # Maximální počet chyb je délka řetězce bez prvního obrázku, proto - 1
-    max_failes = (len(picture_list)) - 1
+    max_failes = len(picture_list) - 1
     game_word = choose_word(load_words())
     game_field = load_field(game_word)
     while result(game_field, game_word):

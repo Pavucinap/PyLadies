@@ -6,7 +6,8 @@ import hangman
 
 # Testování vstupu
 def test_letter_in_word():
-    assert validation.check_string("o", "kočka") == True
+    # Pokud dělám test s výsledkem True, nemusím psát čemu se rovná
+    assert validation.check_string("o", "kočka")
 
 
 def test_insert_1_character():
