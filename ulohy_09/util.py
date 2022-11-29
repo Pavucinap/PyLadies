@@ -1,5 +1,4 @@
 def validate_days(days):
     if type(days) is int and int(days) > 0:
         return days
-    else:
-        raise ValueError("Number of days must be numeric.")
+    raise ValueError("Number of days must be numeric.")

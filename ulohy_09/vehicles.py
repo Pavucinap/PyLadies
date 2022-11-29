@@ -18,16 +18,16 @@ class Vehicle:
         return show
 
     def open_door(self):
-        return f"You open a door.\n"
+        return "You open a door.\n"
 
     def sit_and_switch_engine(self):
-        return f"You sit and switch engine.\n"
+        return "You sit and switch engine.\n"
 
     def inspect_vehicle(self):
-        return f"You inspect lights, liquids and wipers.\n"
+        return "You inspect lights, liquids and wipers.\n"
 
     def honk(self):
-        return f"You honk. It sounds:'Meeeep, meeeeep'."
+        return "You honk. It sounds:'Meeeep, meeeeep'."
 
     def set_rent_per_day(self, rent_per_day):
         self.rent_per_day = rent_per_day
@@ -78,7 +78,7 @@ class Motorcycle(Vehicle):
         return show
 
     def inspect_vehicle(self):
-        return f"You inspect lights and liquids.\n"
+        return "You inspect lights and liquids.\n"
 
 
 class Truck(Vehicle):
@@ -90,14 +90,14 @@ class Truck(Vehicle):
     def about_vehicle(self):
         print("This vehicle is car.")
         super().about_vehicle()
-        print(f"It has 2 doors and 2 seats.")
+        print("It has 2 doors and 2 seats.")
         print(f"It runs on {self.fuel}.")
 
     def sit_and_switch_engine(self):
-        return f"You climb into cab, sit and switch engine.\n"
+        return "You climb into cab, sit and switch engine.\n"
 
     def honk(self):
-        return f"You honk. It goes:'Traaaaa, traaaaaaaaaaaa.'"
+        return "You honk. It goes:'Traaaaa, traaaaaaaaaaaa.'"
 
 
 octavia = Car("Škoda", "Octavia 1", "silver", "5", "5", "gasoline")
