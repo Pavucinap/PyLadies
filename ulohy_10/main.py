@@ -51,4 +51,4 @@ print("Generuji fakturu...")
 inv = Invoice(unit_price_CZK, currency, product, amount)
 inv.generate_invoice()
 
-print(f'Faktura je hotová na odkaze <a href="Faktury/Faktura_{inv.symbol}.html">')
+print(f'Faktura je hotová na odkaze <"Faktury/Faktura_{inv.symbol}.html">')
