@@ -1,12 +1,12 @@
 {
-  "den": "20221215",
-  "denc": "15.12.2022",
+  "den": "20221216",
+  "denc": "16.12.2022",
   "banka": "\u010cesk\u00e1 n\u00e1rodn\u00ed banka",
   "url": "https://www.kurzy.cz/kurzy-men/kurzovni-listek/ceska-narodni-banka/",
   "kurzy": {
     "AUD": {
       "jednotka": 1,
-      "dev_stred": 15.466,
+      "dev_stred": 15.291,
       "dev_nakup": null,
       "dev_prodej": null,
       "val_stred": null,
@@ -17,7 +17,7 @@
     },
     "BRL": {
       "jednotka": 1,
-      "dev_stred": 4.316,
+      "dev_stred": 4.314,
       "dev_nakup": null,
       "dev_prodej": null,
       "val_stred": null,
@@ -28,7 +28,7 @@
     },
     "GBP": {
       "jednotka": 1,
-      "dev_stred": 28.148,
+      "dev_stred": 27.813,
       "dev_nakup": null,
       "dev_prodej": null,
       "val_stred": null,
@@ -39,7 +39,7 @@
     },
     "BGN": {
       "jednotka": 1,
-      "dev_stred": 12.411,
+      "dev_stred": 12.404,
       "dev_nakup": null,
       "dev_prodej": null,
       "val_stred": null,
@@ -50,7 +50,7 @@
     },
     "CNY": {
       "jednotka": 1,
-      "dev_stred": 3.281,
+      "dev_stred": 3.278,
       "dev_nakup": null,
       "dev_prodej": null,
       "val_stred": null,
@@ -61,7 +61,7 @@
     },
     "DKK": {
       "jednotka": 1,
-      "dev_stred": 3.263,
+      "dev_stred": 3.262,
       "dev_nakup": null,
       "dev_prodej": null,
       "val_stred": null,
@@ -72,7 +72,7 @@
     },
     "EUR": {
       "jednotka": 1,
-      "dev_stred": 24.27,
+      "dev_stred": 24.26,
       "dev_nakup": null,
       "dev_prodej": null,
       "val_stred": null,
@@ -83,7 +83,7 @@
     },
     "PHP": {
       "jednotka": 100,
-      "dev_stred": 40.933,
+      "dev_stred": 41.141,
       "dev_nakup": null,
       "dev_prodej": null,
       "val_stred": null,
@@ -94,7 +94,7 @@
     },
     "HKD": {
       "jednotka": 1,
-      "dev_stred": 2.94,
+      "dev_stred": 2.936,
       "dev_nakup": null,
       "dev_prodej": null,
       "val_stred": null,
@@ -105,7 +105,7 @@
     },
     "HRK": {
       "jednotka": 1,
-      "dev_stred": 3.219,
+      "dev_stred": 3.218,
       "dev_nakup": null,
       "dev_prodej": null,
       "val_stred": null,
@@ -116,7 +116,7 @@
     },
     "INR": {
       "jednotka": 100,
-      "dev_stred": 27.607,
+      "dev_stred": 27.621,
       "dev_nakup": null,
       "dev_prodej": null,
       "val_stred": null,
@@ -127,7 +127,7 @@
     },
     "IDR": {
       "jednotka": 1000,
-      "dev_stred": 1.463,
+      "dev_stred": 1.465,
       "dev_nakup": null,
       "dev_prodej": null,
       "val_stred": null,
@@ -138,7 +138,7 @@
     },
     "ISK": {
       "jednotka": 100,
-      "dev_stred": 16.083,
+      "dev_stred": 16.163,
       "dev_nakup": null,
       "dev_prodej": null,
       "val_stred": null,
@@ -149,7 +149,7 @@
     },
     "ILS": {
       "jednotka": 1,
-      "dev_stred": 6.671,
+      "dev_stred": 6.612,
       "dev_nakup": null,
       "dev_prodej": null,
       "val_stred": null,
@@ -160,7 +160,7 @@
     },
     "JPY": {
       "jednotka": 100,
-      "dev_stred": 16.735,
+      "dev_stred": 16.669,
       "dev_nakup": null,
       "dev_prodej": null,
       "val_stred": null,
@@ -171,7 +171,7 @@
     },
     "ZAR": {
       "jednotka": 1,
-      "dev_stred": 1.322,
+      "dev_stred": 1.299,
       "dev_nakup": null,
       "dev_prodej": null,
       "val_stred": null,
@@ -182,7 +182,7 @@
     },
     "KRW": {
       "jednotka": 100,
-      "dev_stred": 1.741,
+      "dev_stred": 1.744,
       "dev_nakup": null,
       "dev_prodej": null,
       "val_stred": null,
@@ -193,7 +193,7 @@
     },
     "CAD": {
       "jednotka": 1,
-      "dev_stred": 16.803,
+      "dev_stred": 16.725,
       "dev_nakup": null,
       "dev_prodej": null,
       "val_stred": null,
@@ -204,7 +204,7 @@
     },
     "HUF": {
       "jednotka": 100,
-      "dev_stred": 5.972,
+      "dev_stred": 5.958,
       "dev_nakup": null,
       "dev_prodej": null,
       "val_stred": null,
@@ -215,7 +215,7 @@
     },
     "MYR": {
       "jednotka": 1,
-      "dev_stred": 5.173,
+      "dev_stred": 5.163,
       "dev_nakup": null,
       "dev_prodej": null,
       "val_stred": null,
@@ -226,7 +226,7 @@
     },
     "MXN": {
       "jednotka": 1,
-      "dev_stred": 1.159,
+      "dev_stred": 1.152,
       "dev_nakup": null,
       "dev_prodej": null,
       "val_stred": null,
@@ -237,7 +237,7 @@
     },
     "XDR": {
       "jednotka": 1,
-      "dev_stred": 30.484,
+      "dev_stred": 30.403,
       "dev_nakup": null,
       "dev_prodej": null,
       "val_stred": null,
@@ -248,7 +248,7 @@
     },
     "NOK": {
       "jednotka": 1,
-      "dev_stred": 2.332,
+      "dev_stred": 2.314,
       "dev_nakup": null,
       "dev_prodej": null,
       "val_stred": null,
@@ -259,7 +259,7 @@
     },
     "NZD": {
       "jednotka": 1,
-      "dev_stred": 14.596,
+      "dev_stred": 14.539,
       "dev_nakup": null,
       "dev_prodej": null,
       "val_stred": null,
@@ -270,7 +270,7 @@
     },
     "PLN": {
       "jednotka": 1,
-      "dev_stred": 5.177,
+      "dev_stred": 5.17,
       "dev_nakup": null,
       "dev_prodej": null,
       "val_stred": null,
@@ -281,7 +281,7 @@
     },
     "RON": {
       "jednotka": 1,
-      "dev_stred": 4.931,
+      "dev_stred": 4.93,
       "dev_nakup": null,
       "dev_prodej": null,
       "val_stred": null,
@@ -292,7 +292,7 @@
     },
     "SGD": {
       "jednotka": 1,
-      "dev_stred": 16.849,
+      "dev_stred": 16.832,
       "dev_nakup": null,
       "dev_prodej": null,
       "val_stred": null,
@@ -303,7 +303,7 @@
     },
     "SEK": {
       "jednotka": 1,
-      "dev_stred": 2.227,
+      "dev_stred": 2.202,
       "dev_nakup": null,
       "dev_prodej": null,
       "val_stred": null,
@@ -314,7 +314,7 @@
     },
     "CHF": {
       "jednotka": 1,
-      "dev_stred": 24.616,
+      "dev_stred": 24.556,
       "dev_nakup": null,
       "dev_prodej": null,
       "val_stred": null,
@@ -325,7 +325,7 @@
     },
     "THB": {
       "jednotka": 100,
-      "dev_stred": 65.388,
+      "dev_stred": 65.323,
       "dev_nakup": null,
       "dev_prodej": null,
       "val_stred": null,
@@ -336,7 +336,7 @@
     },
     "TRY": {
       "jednotka": 1,
-      "dev_stred": 1.226,
+      "dev_stred": 1.225,
       "dev_nakup": null,
       "dev_prodej": null,
       "val_stred": null,
@@ -347,7 +347,7 @@
     },
     "USD": {
       "jednotka": 1,
-      "dev_stred": 22.853,
+      "dev_stred": 22.846,
       "dev_nakup": null,
       "dev_prodej": null,
       "val_stred": null,
