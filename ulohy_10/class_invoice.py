@@ -1,9 +1,7 @@
 import datetime
 import os
+import sys
 from class_qrcodegenerator import QrCodeGenerator
-
-ACCOUNT = "2600702427/6800"
-IBAN = "CZ1168000000002600702427"
 
 
 class Invoice:
@@ -14,34 +12,38 @@ class Invoice:
         self.amount = amount
         self.product = product
         self.path = path
-        self.symbol = self.generator_variable_symbol()
-        try:
-            os.makedirs(self.path + "/Faktury")
-        except FileExistsError:
-            pass
+        self.symbol = self.generate_variable_symbol()
+        self.account = "2600702427/6800"
+        self.iban = "CZ1168000000002600702427"
 
-    def generator_variable_symbol(self):
+    def generate_variable_symbol(self):
         """Generate a unique variable symbol"""
-        with open("VS.txt", "r+") as f:
-            content = f.read()
+        try:
+            f = open(f"VS.txt", "r+")
+            content = str(int(f.read()) + 1)
             f.seek(0)
-            f.write(str(int(content) + 1))
-        with open("VS.txt", "r+") as f_2:
-            symbol = f_2.read()
-            return symbol
+            f.write(content)
+            f.close()
+            return content
+        except IOError:
+            f = open(f"VS.txt", "w")
+            f.write("2022000001")
+            f.close()
+            return "2022000001"
 
     def price(self):
         return self.unit_price * self.amount
 
     def generate_invoice(self):
         """Import data into the invoice template."""
+        os.makedirs(self.path, exist_ok=True)
         with open("Faktury/template/template.html", "r",
                   encoding='utf-8') as file:
-            QrCodeGenerator.get_qr(IBAN, self.price(), self.symbol)
+            QrCodeGenerator.get_qr(self.iban, self.price(), self.symbol)
             text = file.read()
             html_content = text.format(
                 invoice_number=self.symbol,
-                account=ACCOUNT,
+                account=self.account,
                 invoice_date=datetime.date.today().strftime("%d. %m. %Y"),
                 due_date=(datetime.date.today() +
                           datetime.timedelta(days=14)).strftime("%d. %m. %Y"),
@@ -51,7 +53,7 @@ class Invoice:
                 price_per_unit=f"{self.unit_price: .2f}",
                 product_price=f"{self.price(): .2f}",
                 QRCode=f"QR_Code_{self.symbol}.png"
-                )
+            )
 
         with open(f"Faktury/Faktura_{self.symbol}.html", "w",
                   encoding='utf-8') as file_invoice:
