@@ -2,3 +2,7 @@ tajne_heslo.txt
 __pycache__
 *.pyc
 token.txt
+Faktura_*.html
+QR_Code_*.png
+VS.txt
+currency-*.txt

@@ -1,0 +1,148 @@
+html, body, div, span, h2, p, table,
+thead, tr, th, td, header, qrcode {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 13px;
+	width: 21cm;
+    min-height: 29.7cm;
+	margin: 0;
+	padding: 0;
+}
+body .container {
+	min-width: 500px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+body .left {
+	float: left;
+}
+body .right {
+	float: right;
+}
+
+header {
+	margin-top: 20px;
+	height: 30px;
+}
+header .company-address {
+	float: left;
+	line-height: 1.7em;
+}
+header .company-address .title {
+	color: #83b726;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+header .invoice_number {
+	float: right;
+	height: 50px;
+	padding: 0 10px;
+	font-size: 2em;
+	font-weight: bold;
+	color: #83b726;
+}
+
+section .details {
+	margin-bottom: 55px;
+}
+section .details .client {
+	width: 50%;
+	line-height: 20px;
+}
+section .details .client .name {
+	color: #83b726;
+	font-weight: bold;
+}
+section .details .data {
+	height: 100px;
+	text-align: right;
+	line-height: 20px;
+}
+
+section table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+section table .qty, section table .unit, section table .total {
+	width: 15%;
+}
+section table .desc {
+	width: 55%;
+}
+
+section table thead th {
+	padding: 5px 10px;
+	background: #83b726;
+	border-bottom: 5px solid #FFFFFF;
+	border-right: 4px solid #FFFFFF;
+	text-align: right;
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+section table thead th:last-child {
+	border-right: none;
+}
+section table thead .desc {
+	text-align: left;
+}
+section table thead .qty {
+	text-align: center;
+}
+section table tbody td {
+	padding: 10px;
+	background: #edffcd;
+	text-align: right;
+	border-bottom: 5px solid #FFFFFF;
+	border-right: 4px solid #FFFFFF;
+}
+section table tbody td:last-child {
+	border-right: none;
+}
+section table tbody .desc {
+	text-align: left;
+}
+section table tbody .qty {
+	text-align: center;
+}
+section table.grand-total {
+	margin-bottom: 45px;
+}
+section table.grand-total td {
+	padding: 5px 10px;
+	border: none;
+	text-align: right;
+}
+section table.grand-total .desc {
+	background-color: transparent;
+}
+section table.grand-total tr:last-child td {
+	font-weight: 600;
+	color: #83b726;
+	font-size: 1.3em;
+}
+
+section .qrcode {
+	color: #83b726;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+section .qrcode img {
+	width: 150px;
+	height: 150px;
+}
